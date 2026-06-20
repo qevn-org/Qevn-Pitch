@@ -42,7 +42,8 @@ export async function generatePitchFromGemini(
   const apiKey = process.env.GEMINI_API_KEY;
 
   if (!apiKey) {
-    throw new Error("GEMINI_API_KEY is not defined in environment variables.");
+    console.warn("GEMINI_API_KEY is not defined. Falling back to mock content.");
+    return getFallbackPitch(industry, description, targetCustomer);
   }
 
   try {
