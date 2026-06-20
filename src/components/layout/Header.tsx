@@ -63,7 +63,7 @@ export default function Header() {
             );
           })}
           <a
-            href="https://qevn.in"
+            href="https://www.qevn.in"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs uppercase tracking-wider text-void bg-bone hover:bg-acid hover:text-void px-3 py-1.5 font-bold transition-all duration-200"
@@ -101,7 +101,7 @@ export default function Header() {
             );
           })}
           <a
-            href="https://qevn.in"
+            href="https://www.qevn.in"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-xs uppercase tracking-wider text-void bg-bone hover:bg-acid text-center py-2.5 font-bold transition-all duration-200 mt-2"

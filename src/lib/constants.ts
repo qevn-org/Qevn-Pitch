@@ -129,5 +129,5 @@ export const INDUSTRIES: IndustryConfig[] = [
 
 export const RATE_LIMIT_FREE_MAX = 3;
 
-export const QEVN_URL = "https://qevn.in";
-export const QEVN_CALENDLY = "https://cal.com/qevn"; // fallback booking calendar
+export const QEVN_URL = "https://www.qevn.in";
+export const QEVN_CALENDLY = "https://calendly.com/hello-qevn/30min"; // booking calendar

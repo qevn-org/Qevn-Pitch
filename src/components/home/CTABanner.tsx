@@ -27,7 +27,7 @@ export default function CTABanner() {
 
         <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
           <a
-            href="https://qevn.in"
+            href="https://www.qevn.in"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
@@ -37,7 +37,7 @@ export default function CTABanner() {
             </Button>
           </a>
           <a
-            href="https://cal.com/qevn"
+            href="https://calendly.com/hello-qevn/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"

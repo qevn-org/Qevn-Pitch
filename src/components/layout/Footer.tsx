@@ -46,7 +46,7 @@ export default function Footer() {
             The Automation Agency
           </h4>
           <a
-            href="https://qevn.in"
+            href="https://www.qevn.in"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[11px] uppercase tracking-wider text-graphite hover:text-acid transition-colors flex items-center gap-1 group"
@@ -54,7 +54,7 @@ export default function Footer() {
             QEVN Main Agency <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
           <a
-            href="https://qevn.in/work"
+            href="https://www.qevn.in/qevn-decoded"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[11px] uppercase tracking-wider text-graphite hover:text-acid transition-colors flex items-center gap-1 group"
@@ -62,7 +62,7 @@ export default function Footer() {
             Our Case Studies <ArrowUpRight size={12} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
           <a
-            href="https://cal.com/qevn"
+            href="https://calendly.com/hello-qevn/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[11px] uppercase tracking-wider text-acid font-bold transition-colors flex items-center gap-1 group"
@@ -74,14 +74,14 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto border-t border-surface mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] md:text-xs font-mono text-graphite/55">
         <div>
-          &copy; {new Date().getFullYear()} QEVN Automation Agency (qevn.in). All rights reserved.
+          &copy; {new Date().getFullYear()} QEVN Automation Agency (www.qevn.in). All rights reserved.
         </div>
         <div className="flex gap-4">
-          <span className="hover:text-bone cursor-pointer transition-colors">Privacy</span>
+          <a href="https://www.qevn.in/legal/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-bone cursor-pointer transition-colors">Privacy</a>
           <span>&middot;</span>
-          <span className="hover:text-bone cursor-pointer transition-colors">Terms of Service</span>
+          <a href="https://www.qevn.in/legal/terms" target="_blank" rel="noopener noreferrer" className="hover:text-bone cursor-pointer transition-colors">Terms of Service</a>
           <span>&middot;</span>
-          <span className="text-acid">// Built with Next.js 15 & Claude AI</span>
+          <span className="text-acid">// Built with Next.js 15 & Gemini AI</span>
         </div>
       </div>
     </footer>

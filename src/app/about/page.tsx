@@ -46,7 +46,7 @@ export default function AboutPage() {
             Who is QEVN?
           </h3>
           <p>
-            QEVN (<a href="https://qevn.in" target="_blank" rel="noopener noreferrer" className="text-bone hover:text-acid underline transition-colors">qevn.in</a>) is an AI automation agency. We build custom applications, automated databases, data pipelines, and AI workflows that save hundreds of hours of manual labor for startups and SMB operators.
+            QEVN (<a href="https://www.qevn.in" target="_blank" rel="noopener noreferrer" className="text-bone hover:text-acid underline transition-colors">www.qevn.in</a>) is an AI automation agency. We build custom applications, automated databases, data pipelines, and AI workflows that save hundreds of hours of manual labor for startups and SMB operators.
           </p>
           <p>
             We believe that software should be built with speed, precision, and taste. That's why we launched the 10-day public build journal: to pull back the curtain and show exactly how we build and launch products, day by day. No mystery, no hidden timelines.
@@ -83,7 +83,7 @@ export default function AboutPage() {
             Let's design your lead pipeline, scrape your target databases, or build your custom AI agents. Book a strategy session today.
           </p>
           <a
-            href="https://cal.com/qevn"
+            href="https://calendly.com/hello-qevn/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2"

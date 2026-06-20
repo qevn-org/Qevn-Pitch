@@ -108,7 +108,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
               We construct tailormade automation sequences, data lead pipes, and CRM integrations to fully automate your outbound sales motions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://qevn.in" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.qevn.in" target="_blank" rel="noopener noreferrer">
                 <Button variant="secondary" className="w-full text-center">
                   Visit QEVN.IN
                 </Button>

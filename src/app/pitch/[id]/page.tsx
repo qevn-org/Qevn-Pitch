@@ -158,7 +158,7 @@ export default async function PitchPage({ params }: PageProps) {
             </p>
           </div>
           <a
-            href="https://qevn.in"
+            href="https://www.qevn.in"
             target="_blank"
             rel="noopener noreferrer"
           >
