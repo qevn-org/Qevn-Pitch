@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api
+
+# Host
+Host: https://pitch.qevn.in
+
+# Sitemaps
+Sitemap: https://pitch.qevn.in/sitemap.xml

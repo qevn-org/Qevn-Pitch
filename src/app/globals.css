@@ -1,0 +1,116 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&f[]=space-mono@400,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-void: #08090A;
+  --color-surface: #16181A;
+  --color-acid: #B6F76E;
+  --color-signal: #E8FFB0;
+  --color-bone: #F5F3ED;
+  --color-graphite: #8A8F87;
+
+  --font-display: "Clash Display", sans-serif;
+  --font-sans: "General Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  
+  --animate-cursor-blink: cursor-blink 1s step-end infinite;
+  --animate-pulse-slow: pulse-slow 3s ease-in-out infinite;
+
+  @keyframes cursor-blink {
+    from, to { border-color: transparent }
+    50% { border-color: #B6F76E }
+  }
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.35; }
+  }
+}
+
+:root {
+  --background: #08090A;
+  --foreground: #F5F3ED;
+}
+
+body {
+  background-color: #08090A;
+  color: #F5F3ED;
+  font-family: "General Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090A;
+}
+::-webkit-scrollbar-thumb {
+  background: #16181A;
+  border: 1px solid #8A8F87;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B6F76E;
+}
+
+/* Grid Background Layer */
+.grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(138, 143, 135, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(138, 143, 135, 0.05) 1px, transparent 1px);
+}
+
+/* Terminal Cursor */
+.terminal-cursor::after {
+  content: "█";
+  color: #B6F76E;
+  margin-left: 2px;
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* Asymmetric Accent Borders */
+.acid-border-glow {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.acid-border-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, #B6F76E, #E8FFB0, transparent 60%);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.acid-border-glow:hover::before {
+  opacity: 1;
+}
+
+/* Thick Brackets Label Style */
+.section-label {
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #8A8F87;
+  text-transform: uppercase;
+}
+
+/* Utility noise effect to add texture */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 9999;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
