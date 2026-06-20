@@ -49,7 +49,7 @@ export default function Hero({ onSubmit, isLoading }: HeroProps) {
             <div className="flex flex-col animate-fade-in">
               <span className="font-display text-3xl font-bold text-bone">99.8%</span>
               <span className="font-mono text-[10px] text-graphite uppercase tracking-wider">
-                Gemini 1.5 Engine
+                GPT-4o-mini Engine
               </span>
             </div>
             <div className="w-px bg-surface self-stretch h-8 hidden sm:block" />

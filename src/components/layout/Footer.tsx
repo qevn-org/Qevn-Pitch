@@ -81,7 +81,7 @@ export default function Footer() {
           <span>&middot;</span>
           <a href="https://www.qevn.in/legal/terms" target="_blank" rel="noopener noreferrer" className="hover:text-bone cursor-pointer transition-colors">Terms of Service</a>
           <span>&middot;</span>
-          <span className="text-acid">// Built with Next.js 15 & Gemini AI</span>
+          <span className="text-acid">// Built with Next.js 15 & OpenAI GPT</span>
         </div>
       </div>
     </footer>

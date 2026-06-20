@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { generatePitchFromGemini } from "@/lib/gemini/client";
+import { generatePitchFromOpenAI } from "@/lib/openai/client";
 import { supabase } from "@/lib/supabase/client";
 import { nanoid } from "nanoid";
 
@@ -27,8 +27,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 3. Pitch Generation (Gemini API or mock fallback)
-    const pitch = await generatePitchFromGemini(industry, description, targetCustomer);
+    // 3. Pitch Generation (OpenAI API or mock fallback)
+    const pitch = await generatePitchFromOpenAI(industry, description, targetCustomer);
 
     // 4. Save to Supabase (if connected)
     const shareSlug = nanoid(10);
